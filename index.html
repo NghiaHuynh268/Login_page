@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap4.min.css" />
+    <script src="./assets/js/bootstrap4.min.js"></script>
+    <script src="./assets/js/jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" id="theme-link" />
+    <!-- <link rel="stylesheet" href="./assets/css/darkmode.css" /> -->
+    <link rel="stylesheet" href="./assets/css/font.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="main">
+        <h1 class="main-title dark">Sign in</h1>
+        <p class="main-describe dark">
+          Sign in and start managing your candidates!
+        </p>
+        <form>
+          <div class="user-group">
+            <input
+              type="text"
+              id="form-user"
+              onkeyup="myUser()"
+              placeholder="Username"
+            />
+            <span id="user-error"></span>
+          </div>
+          <div class="pass-group">
+            <input
+              type="password"
+              id="form-password"
+              onkeyup="myPass()"
+              placeholder="Password"
+            />
+            <span id="pass-error"></span>
+          </div>
+          <div class="form-opt">
+            <div class="form-remember">
+              <input type="checkbox" id="check" />
+              <label for="check">Remember me</label>
+            </div>
+            <a href="#">Forgot password?</a>
+          </div>
+          <button type="button" onclick="submitLogin()">Login</button>
+        </form>
+      </div>
+      <img src="./assets/images/Vectors.png" class="footer-img" />
+      <button type="button" class="dark-mode-btn">
+        <span class="span"></span>
+      </button>
+    </div>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>

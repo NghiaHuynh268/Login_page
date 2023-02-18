@@ -1,0 +1,190 @@
+body {
+  font-family: "Lexend Deca";
+  overflow: hidden;
+}
+.wrapper {
+  background-color: #e5e5e5;
+  height: 100vh;
+  position: relative;
+}
+.wrapper {
+  background-color: #e5e5e5;
+  height: 100vh;
+  position: relative;
+}
+.wrapper > img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.main {
+  min-width: 350px;
+  max-width: 360px;
+  margin: auto;
+  padding-top: 157px;
+  padding-bottom: 50px;
+}
+.main-title {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 80px;
+  text-align: center;
+  color: #224957;
+  margin-bottom: 39px;
+}
+.main-describe {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #224957;
+  margin-bottom: 36px;
+}
+form {
+  padding: 0 25px;
+}
+.user-group {
+  margin-bottom: 22px;
+}
+.pass-group {
+  margin-bottom: 13px;
+}
+#form-user,
+#form-password {
+  width: 100%;
+  background-color: #224957;
+  padding: 12px 0 13px 18px;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+form span {
+  color: red;
+  font-size: 15px;
+}
+#form-user::placeholder,
+#form-password::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+}
+#form-login {
+  margin-bottom: 10px;
+}
+#form-password {
+  margin-bottom: 10px;
+}
+.form-opt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.form-remember {
+  display: flex;
+  align-items: center;
+}
+.form-opt input {
+  display: none;
+}
+.form-opt label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 18px;
+  height: 17px;
+  background-color: #093545;
+  border-radius: 5px;
+  z-index: 1;
+}
+.form-opt label::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 2px;
+  background-color: white;
+  position: absolute;
+  top: 5px;
+  left: 6px;
+  z-index: 2;
+  display: none;
+  transition: all 0.4s;
+}
+.form-opt input:checked + label::after {
+  display: block;
+}
+.form-opt label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 17px;
+  color: #093545;
+  padding-left: 25px;
+  position: relative;
+}
+.form-opt a {
+  color: #000000;
+  transition: all 0.4s;
+}
+.form-opt a:hover {
+  color: #8e8e8e;
+}
+form > button {
+  width: 100%;
+  padding: 13px 0;
+  background-color: #20df7f;
+  transition: all 0.4s;
+  border-radius: 10px;
+  color: #224957;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+form > button:hover {
+  background-color: #00c663;
+}
+.dark-mode-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 36px;
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  z-index: 2;
+  border: none;
+}
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+.dark-mode-btn .span {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  padding: 9px;
+  animation: rotate 2s linear 0s infinite;
+}
+.dark-mode-btn .span::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/Ellipse\ 3.png");
+  z-index: 2;
+  width: 17px;
+  height: 33px;
+}
